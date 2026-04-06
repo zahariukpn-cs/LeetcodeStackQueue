@@ -1,8 +1,8 @@
 """A nice module."""
 class Node:
     """A nice class."""
-    def __init__(self, val, next=None):
-        self.val = val
+    def __init__(self, data, next=None):
+        self.data = data
         self.next = next
 
 class Stack:
@@ -19,12 +19,12 @@ class Stack:
     def pop(self):
         if self.head is None:
             return
-        val = self.head.val
+        data = self.head.data
         self.head = self.head.next
-        return val
+        return data
 
     def peek(self):
-        return self.head.val
+        return self.head.data
 
 class MyQueue:
     """A nice class."""
